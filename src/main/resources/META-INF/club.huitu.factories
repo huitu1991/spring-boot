@@ -1,0 +1,2 @@
+service=club.huitu.springboot.service.OrderServiceConfiguration,\
+club.huitu.springboot.service.UserServiceConfiguration
