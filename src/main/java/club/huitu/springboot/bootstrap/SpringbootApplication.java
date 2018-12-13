@@ -1,17 +1,16 @@
 package club.huitu.springboot.bootstrap;
 
+import club.huitu.springboot.autoconfigure.AutoConfigurationServiceImportSelector;
 import club.huitu.springboot.autoconfigure.EnableMyService;
 import club.huitu.springboot.service.BaseService;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.context.annotation.EnableAspectJAutoProxy;
-import org.springframework.scheduling.annotation.EnableAsync;
-import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.context.annotation.Import;
 
 @SpringBootApplication
+//@Import(AutoConfigurationServiceImportSelector.class)
 @EnableMyService
 public class SpringbootApplication {
 
@@ -28,6 +27,7 @@ public class SpringbootApplication {
                     value.doService();
                 });
 
+        applicationContext.close();
     }
 
 }
