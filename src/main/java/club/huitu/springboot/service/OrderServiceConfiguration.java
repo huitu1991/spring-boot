@@ -1,5 +1,6 @@
 package club.huitu.springboot.service;
 
+import club.huitu.springboot.autoconfigure.AskRegisterBeanConditional;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
@@ -10,6 +11,8 @@ import org.springframework.stereotype.Component;
 @Configuration
 public class OrderServiceConfiguration {
 
+
+    @AskRegisterBeanConditional(OrderService.class)
     @Component
     public class OrderService implements BaseService {
         @Override

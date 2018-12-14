@@ -5,6 +5,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.stereotype.Component;
 
+import java.lang.annotation.Inherited;
+
 /**
  * @author hiutu
  * Created by huitu on 2018/12/13.
