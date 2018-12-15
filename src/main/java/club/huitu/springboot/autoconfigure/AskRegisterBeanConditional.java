@@ -6,10 +6,7 @@ import org.springframework.context.annotation.Conditional;
 import java.lang.annotation.*;
 
 /**
- *
- * 前询问是否加载的装配条件
- * {@link AskRegisterBeanCondition AskRegisterBeanCondition}
- *
+ * {@link AskRegisterBeanCondition AskRegisterBeanCondition} 前询问是否加载的装配条件
  * @author hiutu
  * Created by huitu on 2018/12/14.
  */

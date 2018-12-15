@@ -28,7 +28,7 @@ public class AutoConfigurationServiceImportSelector implements ImportSelector {
             e.printStackTrace();
         }
         String value = String.valueOf(properties.get(SERVICE_KEY));
-        String[] serviceClasses = StringUtils.split(value, ",");
+        String[] serviceClasses = StringUtils.tokenizeToStringArray(value,",");
         return serviceClasses;
     }
 
